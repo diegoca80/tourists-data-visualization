@@ -110,7 +110,7 @@ function makeGraphs(error, recordsJson) {
     });
 	
 	stateChart
-		.width(300)
+		.width(350)
 		.height(550)
         .dimension(stateDim)
         .group(stateGroup)
