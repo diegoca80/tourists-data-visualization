@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.min.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Interactive Visualization of International Tourists Arrival</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="row">
+
+          <!-- Time Chart --> 
+          <div class="col-md-5">
+			<div class="row">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Tourists arrival per year
+              </div>
+              <div class="chart-stage">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+			</div>
+			
+			<div class="row">
+            <div class="col-md-6">
+			<div class="row">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Number of tourists
+              </div>
+              <div class="chart-stage">
+                <div id="number-tourists"></div>
+              </div>
+            </div>
+            </div>
+			<div class="row">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Need Help?
+              </div>
+              <div class="chart-stage">
+                Please check out the HOW TO section.</br>
+				<a class="btn btn-default" href="http://www.google.com" role="button">README</a></br>
+				If you still have doubts please contact the developers.
+              </div>
+            </div>
+            </div>
+			</div>
+
+			<div class="col-md-6">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Means of Transport
+                </div>
+                <div class="chart-stage">
+                  <div id="type-row-chart"></div>
+                </div>
+              </div>
+            </div>
+			</div>
+			
+          </div>
+
+		  <div class="col-md-4">
+		    <div class="row">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Continent (Departure)
+              </div>
+              <div class="chart-stage">
+                <div id="continent-row-chart"></div>
+              </div>
+            </div>
+			</div>
+			<div class="row">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Country (Departure)
+              </div>
+              <div class="chart-stage">
+                <div id="top-5-countries"></div>
+              </div>
+            </div>
+			</div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="row">
+            <div class="col-md-12">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Brazilian State (Destination)
+                </div>
+                <div class="chart-stage">
+                  <div id="state-row-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		  
+		</div>
+		
+    </div>
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/underscore-min.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.min.js"></script>
+  <script src="./static/lib/js/dc.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+  <script src="./static/lib/js/keen.min.js"></script>  
+  <script src='./static/js/graphs.js' type='text/javascript'></script>
+</body>
+</html>
